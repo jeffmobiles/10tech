@@ -15,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "@ersinfotech/merge": "1.0.0",
+    "ant-mobile": "0.0.0",
     "babel-core": "6.3.26",
     "babel-eslint": "5.0.0-beta6",
     "babel-loader": "6.2.0",
