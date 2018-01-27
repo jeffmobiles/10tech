@@ -1,0 +1,17 @@
+{
+  "name": "react-index",
+  "version": "1.0.0",
+  "description": "官网首页",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "webpack": "^3.10.0"
+  }
+}
