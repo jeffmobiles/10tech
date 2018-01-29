@@ -1,0 +1,67 @@
+
+
+
+@x-mobile-breakpoint: 480px;
+@mui-appbar-height:              64px !important;
+@mui-appbar-height-xs-portrait:  56px !important;
+@mui-appbar-height-xs-landscape: 48px !important;
+@mui-appbar-bg-color:            #2196F3 !important;
+@mui-appbar-font-color:          #FFF !important;
+// mobile portrait
+.appbar-height      { height: @mui-appbar-height-xs-portrait; }
+.appbar-min-height  { min-height: @mui-appbar-height-xs-portrait; }
+.appbar-line-height { line-height: @mui-appbar-height-xs-portrait; }
+.appbar-top         { top: @mui-appbar-height-xs-portrait; }
+
+// mobile landscape
+@media (orientation: landscape) and (max-height: @x-mobile-breakpoint) {
+  .appbar-height      { height: @mui-appbar-height-xs-landscape; }
+  .appbar-min-height  { min-height: @mui-appbar-height-xs-landscape; }
+  .appbar-line-height { line-height: @mui-appbar-height-xs-landscape; }
+  .appbar-top         { top: @mui-appbar-height-xs-landscape; }
+}
+
+// all other screen sizes
+@media (min-width: @x-mobile-breakpoint) {
+  .appbar-height      { height: @mui-appbar-height; }
+  .appbar-min-height  { min-height: @mui-appbar-height; }
+  .appbar-line-height { line-height: @mui-appbar-height; }
+  .appbar-top         { top: @mui-appbar-height; }  
+}
+.appbar {
+  // @extend .appbar-min-height;
+  height:@mui-appbar-height-xs-landscape;
+  background-color: @mui-appbar-bg-color;
+  background: linear-gradient(to right, #347eff, #1ea3ff);
+  color: @mui-appbar-font-color;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.12);
+  display:flex;
+  .left {
+    height: 48px;
+    padding: 12px 8px;
+    flex: 1;
+    i {
+      cursor:pointer;
+    }
+  }
+  .middle {
+    flex: 2;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    .title {
+
+    }
+  }
+  .right {
+    width: 48px;
+    height: 48px;
+    padding: 12px 8px;
+    flex: 1;
+    text-align: right;
+    i {
+      cursor:pointer;
+    }
+  }
+}

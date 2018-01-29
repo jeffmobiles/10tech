@@ -16,6 +16,7 @@
   "devDependencies": {
     "@ersinfotech/merge": "1.0.0",
     "ant-mobile": "0.0.0",
+    "antd-mobile": "^2.1.5",
     "babel-core": "6.3.26",
     "babel-eslint": "5.0.0-beta6",
     "babel-loader": "6.2.0",
@@ -49,6 +50,7 @@
     "font-awesome": "4.6.3",
     "history": "1.13.1",
     "lodash": "3.10.1",
+    "material-ui": "^0.20.0",
     "moment": "2.10.6",
     "normalizr": "1.0.0",
     "react": "^15.1.0",
